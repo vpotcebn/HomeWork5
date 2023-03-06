@@ -12,7 +12,5 @@ public class HerokuappTest {
         elementA.dragAndDropTo($("#column-b"));
         elementA.shouldHave(exactText("B"));
 
-        sleep(5000);
-
     }
 }
