@@ -6,7 +6,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class HerokuappTest {
     @Test
-    void hoverTest() {
+    void dragAndDropTest() {
         open("https://the-internet.herokuapp.com/drag_and_drop");
         SelenideElement elementA = $("#column-a");
         elementA.dragAndDropTo($("#column-b"));
