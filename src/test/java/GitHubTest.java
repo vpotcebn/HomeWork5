@@ -11,6 +11,5 @@ public class GitHubTest {
         $(".Header-old").$(byText("Solutions")).hover();
         $("[href='/enterprise']").click();
         $(".enterprise-hero").shouldHave(text("Build like the best"));
-
     }
 }

@@ -9,8 +9,9 @@ public class HerokuappTest {
     void dragAndDropTest() {
         open("https://the-internet.herokuapp.com/drag_and_drop");
         SelenideElement elementA = $("#column-a");
-        elementA.dragAndDropTo($("#column-b"));
+        SelenideElement elementB = $("#column-b");
+        elementA.dragAndDropTo(elementB);
         elementA.shouldHave(exactText("B"));
-
+        elementB.shouldHave(exactText("A"));
     }
 }
